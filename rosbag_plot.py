@@ -67,7 +67,7 @@ class bagPlotter:
         for i in range(len(self.plot_topic_names)):
             plt.plot(self.times[i], self.datas[i], color=self.plot_colors[i], label=self.legends[i])
         if(self.show_legend):
-            plt.legend(fontsize=obj["legend_fontsize"])
+            plt.legend(frameon=False, fontsize=obj["legend_fontsize"])
         plt.xlabel(self.x_label, fontsize=obj["x_label_fontsize"])
         plt.ylabel(self.y_label, fontsize=obj["y_label_fontsize"])
         plt.ylim(self.y_range)
