@@ -61,7 +61,8 @@ class bagPlotter:
                         self.times[j] = np.append(self.times[j], rosbag_time - self.start_time)
 
         # plot data
-        plt.rcParams['font.family'] = 'Times New Roman'
+        plt.rcParams['font.family'] = 'Times New Roman' # https://kenbo.hatenablog.com/entry/2018/11/28/111639
+        plt.rcParams['figure.subplot.bottom'] = 0.2     # https://qiita.com/78910jqk/items/e8bce993081c384afdba
         fig = plt.figure(figsize=obj["fig_size"])
         for i in range(len(self.plot_topic_names)):
             plt.plot(self.times[i], self.datas[i], color=self.plot_colors[i], label=self.legends[i])
