@@ -1,0 +1,20 @@
+bag_filename: 2023-08-09-19-24-46-jetson-xavier-nx-RP254-obstacle-test2.bag
+robot_ns: multirotor
+plot_topic_names: [debug/min_obs_margin]
+plot_fields: [data]
+start_time: 18
+end_time: 21
+
+fig_size: [6, 3]
+show_legend: false
+legends: [min_distance]
+plot_colors: [blue]
+x_label: time [s]
+y_label: distance [m]
+y_range: [0.1, 0.6]
+x_label_fontsize: 15
+y_label_fontsize: 15
+legend_fontsize: 10
+label_fontsize: 15
+save_fig: false
+save_fig_name: flight_analize_multirotor_hydrus.png
