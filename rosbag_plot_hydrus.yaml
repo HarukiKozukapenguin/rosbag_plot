@@ -1,6 +1,6 @@
-bag_filename: 2023-11-07-19-20-58-hydrus-can_avoid_1_obstacle_v1.bag
+bag_filename: hogehoge_v2.bag
 robot_ns: hydrus
-plot_topic_names: [debug/min_obs_margin]
+plot_topic_names: [hogehoge]
 plot_fields: [data]
 start_time: 173.5
 end_time: 176.5
@@ -18,4 +18,4 @@ y_label_fontsize: 30
 legend_fontsize: 10
 label_fontsize: 30
 save_fig: true
-save_fig_name: flight_analize_multirotor_hydrus.png
+save_fig_name: hogehoge.png

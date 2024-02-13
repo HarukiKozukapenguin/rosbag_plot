@@ -1,6 +1,6 @@
-bag_filename: 2023-08-09-19-24-46-jetson-xavier-nx-RP254-obstacle-test2.bag
+bag_filename: hogehoge_v1.bag
 robot_ns: multirotor
-plot_topic_names: [debug/min_obs_margin]
+plot_topic_names: [hogehoge]
 plot_fields: [data]
 start_time: 18
 end_time: 21
@@ -18,4 +18,4 @@ y_label_fontsize: 30
 legend_fontsize: 10
 label_fontsize: 30
 save_fig: true
-save_fig_name: flight_analize_multirotor_hydrus.png
+save_fig_name: hogehoge.png
