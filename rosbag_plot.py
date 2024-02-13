@@ -10,7 +10,7 @@ from typing import List, Dict
 
 class bagLoader:
     def __init__(self, obj):
-        self.bag_filename = os.path.join(os.getcwd(), obj["bag_filename"])
+        self.bag_filename = os.path.join(os.getcwd(), "bag_data/",obj["bag_filename"])
         self.bag = rosbag.Bag(self.bag_filename)
         self.robot_ns = obj["robot_ns"]
         self.plot_topic_names = obj["plot_topic_names"]
