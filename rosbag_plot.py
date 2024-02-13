@@ -68,8 +68,6 @@ class bagPlotter:
         self.fig = plt.figure(figsize=obj["fig_size"])
         
         for i, bag_yaml_data in enumerate(bag_data_list):
-            print("type(bag_yaml_data): ", type(bag_yaml_data))
-            print("bag_yaml_data.keys(): ",bag_yaml_data.keys())
             data_dim:int = np.ceil(np.sqrt(len(bag_data_list)))
             self.plot_bag_data(length = data_dim, number = i, **bag_yaml_data)
 
