@@ -5,16 +5,17 @@ plot_fields: [data]
 start_time: 18
 end_time: 21
 
-fig_size: [6, 3]
+fig_size: [12, 6]
 show_legend: false
 legends: [min_distance]
+width: 8
 plot_colors: [blue]
-x_label: time [s]
+x_label: t [s]
 y_label: distance [m]
 y_range: [0.0, 1.0]
-x_label_fontsize: 15
-y_label_fontsize: 15
+x_label_fontsize: 30
+y_label_fontsize: 30
 legend_fontsize: 10
-label_fontsize: 15
+label_fontsize: 30
 save_fig: true
 save_fig_name: flight_analize_multirotor_hydrus.png

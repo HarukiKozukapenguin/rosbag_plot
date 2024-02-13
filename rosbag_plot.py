@@ -66,7 +66,6 @@ class bagPlotter:
         obj = bag_data_list[0]["obj"]
 
         self.fig = plt.figure(figsize=obj["fig_size"])
-        self.fig.suptitle("several_plot_check")
         
         for i, bag_yaml_data in enumerate(bag_data_list):
             print("type(bag_yaml_data): ", type(bag_yaml_data))
@@ -94,7 +93,7 @@ class bagPlotter:
         ax = self.fig.add_subplot(length,length,number + 1)
 
         for i in range(len(bag_data.plot_topic_names)):
-            ax.plot(bag_data.times[i], bag_data.datas[i], color=bag_data.plot_colors[i], label=bag_data.legends[i])
+            ax.plot(bag_data.times[i], bag_data.datas[i], color=bag_data.plot_colors[i], label=bag_data.legends[i], linewidth = obj["width"])
         if(bag_data.show_legend):
             ax.legend(frameon=False, fontsize=obj["legend_fontsize"])
         ax.set_xlabel(bag_data.x_label, fontsize=obj["x_label_fontsize"])
