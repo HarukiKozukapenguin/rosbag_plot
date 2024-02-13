@@ -2,8 +2,8 @@ bag_filename: 2023-11-07-19-20-58-hydrus-can_avoid_1_obstacle_v1.bag
 robot_ns: hydrus
 plot_topic_names: [debug/min_obs_margin]
 plot_fields: [data]
-start_time: 18
-end_time: 21
+start_time: 173.5
+end_time: 176.5
 
 fig_size: [6, 3]
 show_legend: false
@@ -16,5 +16,5 @@ x_label_fontsize: 15
 y_label_fontsize: 15
 legend_fontsize: 10
 label_fontsize: 15
-save_fig: false
+save_fig: true
 save_fig_name: flight_analize_multirotor_hydrus.png
