@@ -1,21 +1,29 @@
-bag_filename: hogehoge_v2.bag
+bag_filename: 2023-11-07-19-20-58-hydrus-can_avoid_1_obstacle_v1.bag
 robot_ns: hydrus
-plot_topic_names: [hogehoge]
-plot_fields: [data]
+plot_x_y_topic_names: [uav/cog/odom, uav/cog/odom]
+plot_x_y_fields: [pose/pose/position/x, pose/pose/position/y]
 start_time: 173.5
-end_time: 176.5
+end_time: 178.5
 
-fig_size: [12, 6]
+fig_size: [12, 5]
 show_legend: false
-legends: [min_distance]
+legends: ""
 width: 8
-plot_colors: [blue]
-x_label: t [s]
-y_label:
-y_range: [0.0, 1.0]
+plot_colors: blue
+
+x_label: x [m]
+y_label: y [m]
+x_range: [0.0, 2.8]
+y_range: [-1.0, 0.4]
+x_shift: 2.0
+y_shift: 0.0
 x_label_fontsize: 30
 y_label_fontsize: 30
-legend_fontsize: 10
+
+obstacle_position: [[1.9, 0.2]]
+obstacle_radius: 0.25
+
+legend_fontsize: 30
 label_fontsize: 30
 save_fig: true
-save_fig_name: hogehoge.png
+save_fig_name: flight_traj_hydrus.png
